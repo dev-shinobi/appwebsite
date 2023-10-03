@@ -1,0 +1,22 @@
+{
+  "name": "app-idea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --no-source-map css/main.scss css/styles.css",
+    "compile2":"sass --no-source-map css/main.scss css/compiled.css",
+    "prefixes":"postcss css/compiled.css --use autoprefixer --output css/prefixed.css",
+    "optimize":"csso css/prefixed.css --output css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "csso": "^5.0.5",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.68.0"
+  }
+}
