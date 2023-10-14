@@ -1,5 +1,4 @@
-//variables
-$color-bg:#f9fdfb;
+
 *,
 *::before,
 *::after{
@@ -7,6 +6,9 @@ $color-bg:#f9fdfb;
     padding: 0;
     box-sizing: border-box;
 }
+.showborders{
+    border: solid 1px brown;
+    }
 
 @keyframes transitionEffect {
     from{
@@ -33,7 +35,7 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Tektur', cursive;
-    background-color:$color-bg;
+    background-color:#f9fdfb;
     color: rgb(11, 27, 14);
     width: 100vw;
     }
@@ -42,6 +44,7 @@ font-family: 'Tektur', cursive;
         align-items: center;
         justify-content: center;
         margin-top: 40px;
+        width: 100vw;
     }
     .logo{
         display: flex;
@@ -50,13 +53,13 @@ font-family: 'Tektur', cursive;
         height: 620px;
         width: 1100px;
         margin-left: -290px;
+        object-fit: cover;
     }
     .mainlogo{
         display: block;
+        margin-left: -35px;
         margin-bottom: 40px;
-        margin-top: -160px;
-        height: 250px;
-        width: 250px;
+        margin-top: -180px;
     }
     .words{
        display: flex;
@@ -120,6 +123,7 @@ a{
         align-items: center;
         justify-content: center;
         font-family: "Open Sans", sans-serif;
+        width: 100vw;
     }
     .footerlinks{
         margin-top: 45px;
@@ -199,7 +203,7 @@ a{
     ul{
         margin-left: 40px;
         width: 500px; 
-        list-style-type: none
+        list-style-type: none;
     }
     li{
         margin: 15px;
@@ -280,39 +284,111 @@ a{
             margin-top: 0;
             padding: 14px;
         }
-    }
-    @media(max-width:715px){
-        .words{
-            margin-left: -470px;
-         }
-    }
-    @media(max-width:695px){
-        body{
-            height: 900px;
-            width: 700px;
+        .about__div{
+            width: 500px;
         }
+        .about__p{
+            width: 480px;
+        }
+        .about__h3{
+            width: 480px; 
+        }
+    }
+    @media(max-width:765px){
         .main{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin-top: 40px;
+           flex-direction: column;
         }
         .words{
-            margin-top: 80px;
-            margin-left: 0;
-         }
-         .sitelogo{
-            margin-left: 40px;
+            margin-left: -30px;
+        }
+        .logo{
+            display: flex;
+            margin-bottom: 50px;
+            margin-top: -10px;
+        }
+        .sitelogo{
+            margin-left: -25px;
+            padding: 5px;
+            height: 600px;
+            width: 360px;
+            object-fit: cover;
+            object-position:41.5% center;
+        }
+        p{
+            width: 400px; 
+        }
+        ul{
+            width: 400px; 
+        }
+        .privacybody{
+            width: 500px;
+            height: 500px;
+        }
+        .privacy__p{
+            width: 400px; 
+        }
+        .privacybody2{
+            width: 500px;
+            height: 500px;
+        }
+        .privacy__p2{
+            width: 400px; 
         }
     }
     @media(max-width:500px){
-
-.logo{
-    margin-left: 60px;
-}
-body{
-    height: 900px;
-    width: 500px;
-}
+        .about__div{
+            width: 400px;
+        }
+        .about__p{
+            width: 380px;
+        }
+        .about__h3{
+            width: 380px; 
+        }
+        p{
+            width: 300px; 
+        }
+        ul{
+            width: 300px; 
+        }
+        .sides{
+            width: 350px;
+        }
+        .privacybody{
+            width: 300px;
+        }
+        .privacy__p{
+            width: 250px; 
+        }
+        .privacybody2{
+            width: 300px;
+        }
+        .privacy__p2{
+            width: 250px; 
+        }
     }
+    @media(max-width:365px){
+        .about__div{
+            width: 360px;
+        }
+        .about__p{
+            width: 360px;
+        }
+        .about__h3{
+            width: 360px; 
+        }
+        .mainh3{
+            word-spacing: 2.8px;
+            font-size: 25px;
+        }
+        p{
+            width: 280px; 
+        }
+        ul{
+            width: 280px; 
+        }
+        .sides{
+            width: 280px;
+        }
+    }
+   
